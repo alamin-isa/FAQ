@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "workSans";
+  src: url(./assets/font/WorkSans-Regular.ttf);
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  font-family: workSans;
+  background-color: aliceblue;
+}
