@@ -10,7 +10,7 @@ const Faq = () => {
   };
 
   return (
-    <div className="max-w-md shadow-2xl mx-auto p-6 rounded-2xl">
+    <div className="z-50 max-w-md shadow-2xl mx-auto p-6 rounded-2xl">
       <header className="flex gap-3 mb-3 items-center">
         <img src={star} alt="star" />
         <h1 className="font-bold text-black text-4xl">FAQs</h1>
@@ -21,7 +21,7 @@ const Faq = () => {
           <div className="py-2 grid" key={index}>
             <button
               onClick={() => handleToggle(index)}
-              className="flex justify-between gap-4 cursor-pointer"
+              className=" flex justify-between gap-4 py-1.5 cursor-pointer"
             >
               <h4 className="font-bold text-sm">{question}</h4>
               <span
@@ -32,7 +32,7 @@ const Faq = () => {
                 {openIndex === index ? "-" : "+"}
               </span>
             </button>
-            <p className="text-gray-400 text-sm text-justify">
+            <p className="text-gray-400 text-sm text-justify border-b pb-1 border-gray-200">
               {openIndex === index && answer}
             </p>
           </div>
